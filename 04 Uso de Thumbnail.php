@@ -10,5 +10,18 @@
 
 <?php the_post_thumbnail( array(100, 100) );?>  // Otras resoluciones
 
+<?php the_post_thumbnail( array(100, 100), array('class' => 'img-responsive') );?>  // Otras resoluciones
+
+
+
 <!-- Agregar Class al Thumbnail -->
 <?php the_post_thumbnail('medium', array('class' => 'img-responsive')); ?>
+
+
+
+<!-- Obteber URL del Thumbnail-->
+<?php
+$thumb_id = get_post_thumbnail_id();
+$thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
+echo $thumb_url[0];
+?>
