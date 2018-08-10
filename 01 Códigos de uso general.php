@@ -5,6 +5,9 @@
 
 <!-- Código para llamar a la ruta del theme -->
 <?php bloginfo( 'template_directory'); ?>
+ 
+ <!-- Código para llamar a la ruta del Child theme --> 
+<?php echo get_stylesheet_directory_uri(); ?>
 
 <!-- Código para llamar a la ruta del archivo style.css -->
 <?php bloginfo('stylesheet_url'); ?>
