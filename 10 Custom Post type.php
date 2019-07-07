@@ -41,10 +41,10 @@ function create_post_eventos() {
 
 <!-- Agregar en el Loop -->
 
-<?php query_posts(array('post_type'=>'eventos','order' => 'ASC', 'posts_per_page' => "20"  ));?>
+<?php query_posts(array('post_type'=>'eventos','order' => 'DESC', 'posts_per_page' => "20", 'offset' => "1" ));?>
 <?php while ( have_posts() ) : the_post();?>
 						
-	Acá va el Contenido
+	<?php the_title(); ?>
                         
 <?php endwhile; // end of the loop. ?>
 <?php wp_reset_query(); // Reset Query?>
