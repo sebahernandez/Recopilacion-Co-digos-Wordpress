@@ -1,0 +1,6 @@
+<!-- crear un custom field y añadirlo a cualquier card, utilizando posicion absoluta en su CSS. -->
+
+<!-- Ejemplo: una etiqueta que diga producto nuevo en un articulo en venta sobre la imagen o un anuncio de descuento en un producto -->
+
+
+<p class="<?php $c++; if($c == 1) { echo 'label'; } ?>"><?php the_field('articulos'); ?></p>			
