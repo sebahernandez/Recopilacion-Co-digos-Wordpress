@@ -1,3 +1,4 @@
+<?php
 add_filter( 'login_headerurl', 'namespace_login_headerurl' );
 /**
  * Replaces the login header logo URL
@@ -27,3 +28,5 @@ add_action( 'login_head', 'namespace_login_style' );
 function namespace_login_style() {
     echo '<style>.login h1 a { background-image: url( ' . get_template_directory_uri() . '/images/logo.png ) !important; }</style>';
 }
+
+?>
